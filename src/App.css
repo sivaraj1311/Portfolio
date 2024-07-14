@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header ul li {
+    @apply px-6;
+    font-size: x-large;
+    background-color: rgb(228, 243, 16);
+    color: black;
+
+}
+header ul li:hover {
+    background-color: rgb(238, 238, 217);
+    color: blue;
+    font-weight: 500;
+
+}
+
+.Titlename{
+    animation: ani  2s  infinite alternate;
+}
+@keyframes ani{
+    0%{
+        color: rgb(58, 2, 2);
+        text-shadow: 1px 2px rgb(51, 151, 209);
+    }
+    50%{
+        color: rgb(41, 41, 39);
+        text-shadow: 1px 2px red;
+    }
+    100%{
+        color: #043952;
+        text-shadow: 1px 2px rgb(193, 74, 197);
+    }
+}
+.aboutline{
+    font-size: x-large;
+    color: blue;
+    /* color: blue; */
+}
+
+.bg-primary {
+    background: rgb(193, 241, 15);
+    color: blue;
+    font-size: x-large;
+}
+
+.bg-secondary {
+    background: #5cf814;
+}
+
+.mobile-nav {
+    @apply fixed top-10 left-0 bg-gray-800 w-full h-1/4  ;
+}
+
+.mobile-nav li {
+    @apply w-full h-full text-center border-b-2 ;
+}
+
+.project-desc {
+    @apply absolute left-0 right-0 bottom-0 top-0 bg-secondary opacity-0 duration-500 hover:opacity-100;
+}
+
+.btn {
+    @apply bg-primary px-5 py-2 font-bold hover:border-2 border-white rounded;
+   color: black;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.footer{
+    background-color: #5cf814;
+    color: black;
+    font-size: medium;
+}
